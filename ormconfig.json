@@ -4,5 +4,14 @@
   "host": "localhost",
   "username": "car-rent",
   "password": "car-rent",
-  "database": "car-rent"
+  "database": "car-rent",
+  "migrations": [
+    "./src/database/migrations/*.ts"
+  ],
+  "entities": [
+    "./src/modules/**/entities/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
 }

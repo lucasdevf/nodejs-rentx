@@ -1,7 +1,6 @@
 /*
  * this file only serves as an example of what the implementation would look like without dependency injection
- */
-import { CategoriesRepository } from "../../repositories/implementations/CategoriesRepository";
+import { CategoriesRepository } from "../../infra/typeorm/repositories/CategoriesRepository";
 import { ListCategoriesController } from "./ListCategoriesController";
 import { ListCategoriesUseCase } from "./ListCategoriesUseCase";
 
@@ -14,3 +13,4 @@ export default (): ListCategoriesController => {
 
   return listCategoriesController;
 };
+*/

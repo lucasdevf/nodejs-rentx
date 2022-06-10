@@ -11,8 +11,7 @@ async function create() {
 
   (await connection).query(`
     INSERT INTO users (id, name, email, driver_license, password, is_admin, created_at)
-    VALUES ('${id}', 'admin', 'admin@gmail.com', 'xxxxx', '${password}', true, 'now()')
-  `);
+    VALUES ('${id}', 'admin', 'admin@gmail.com', 'xxxxx', '${password}', true, 'now()')`);
 }
 
 create().then(() => console.log("User admin created!"));

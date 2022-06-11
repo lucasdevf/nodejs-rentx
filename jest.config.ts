@@ -5,6 +5,10 @@ import { compilerOptions } from "./tsconfig.json";
 export default {
   bail: true,
   clearMocks: true,
+  collectCoverage: true,
+  collectCoverageFrom: ["<rootDir>/src/modules/**/useCases/**/*.ts"],
+  coverageDirectory: "coverage",
+  coverageReporters: ["lcov", "text-summary"],
   coverageProvider: "v8",
   preset: "ts-jest",
   testMatch: ["**/*.spec.ts"],
